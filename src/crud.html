@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dictionary & Thesaurus</title>
+    <link rel="stylesheet" href="crud.css" />
+    
+  
+  </head>
+  <body>
+    <header class="custom-header">
+      <a href="homepage.html" class="logo">DICTIONARY APP & THESAURUS</a>
+      <ul class="navlist">
+          <li><a href="homepage.html">Dictionary</a></li>
+          <li><a href="index.html">Thesaurus</a></li>
+          <li><a href="crud.html">Feedback</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="userName">User Name</label>
+                            <input type="text" name="userName" id="userName">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="numberPhone">Number Phone</label>
+                            <input type="number" name="numberPhone" id="numberPhone">
+                        </div>
+                        <div>
+                           <label for="feedBack">Feedback</label>
+                           <input type="text" name="feedBack" id="feedBack">
+                        </div>
+    
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+    
+                    <td>
+                        <table class="list" id="storeList">
+                            <thead>
+                                <tr>
+                                    <th>User Name</th>
+                                    <th>Email</th>
+                                    <th>Number Phone</th>
+                                    <th>Feedback</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
+                    </td>
+                </td>
+            </tr>
+        </table>
+        <footer>
+          <ul class="social_icon">
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          </ul>
+          <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          <p> @2023 DICTIONARY APP | All Rights Reserved</p>
+      </footer>
+        <script type="text/javascript" src="crud.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </body>
+    </html>

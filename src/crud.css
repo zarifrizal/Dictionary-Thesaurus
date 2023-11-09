@@ -1,0 +1,212 @@
+body{
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  
+  
+}
+
+table{
+  width: 80%;
+  margin: 40px auto;
+  background-color: #edebeb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table.list{
+  text-align: center;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td{
+  border: 1px solid rgb(204,200,200);
+  text-align: left;
+  padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thread> tr{
+  background-color: rgb(204,200,200);
+}
+
+input[type="text"],input[type="number"]{
+  width:91%;
+  padding:12px 20px;
+  margin:8px 0;
+  display: inline-block;
+  border: 1px solid rgb(165,161,161);
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"],input[type="reset"]{
+  background: #eee;
+  padding:6px 12px;
+  margin:15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"]:hover{
+  background: #614646a4;
+}
+
+input[type="reset"]:hover{
+  background: #614646a4;
+}
+
+button{
+  background: #eee;
+  padding:6px 12px;
+  margin:15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover{
+  background: #614646a4;
+}
+
+ /* Header Styles */
+ custom-header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: rgb(255, 255, 255);
+  
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navlist {
+  display: flex;
+  list-style: none; /* Remove the default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navlist li {
+  margin-right: 537px; /* Adjust the spacing between list items */
+}
+
+.navlist a {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Set a transparent border by default */
+  transition: all 0.55s ease;
+  background-color: rgba(190, 190, 190, 0.537);
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255); /* Change text color on hover for better UX */
+}
+
+/* Menu Icon Styles */
+#menu-icon {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #d1d1d1;
+  width: 100%;
+  min-height: 120px;
+  max-height: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; /* Set the text color to make it visible on the background */
+}
+
+
+/* Social Icon Styles */
+footer .social_icon,
+footer .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Center the individual social icons */
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+  margin: 0 20px; 
+}
+
+footer .social_icon li a,
+footer .menu li a {
+  font-size: 1.2em; 
+  color: #000000;
+  margin: 0 px; 
+  display: inline-block;
+  transition: 0.5s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .social_icon li a {
+  transform: translateX(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em; 
+  color:#000000;
+  margin: 0 px; 
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+
+}
+
+footer p{
+  color: #000000;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,242 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('background.jpg') center center no-repeat;
+        background-size: cover;
+}
+
+/* Header Styles */
+custom-header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: rgb(255, 255, 255);
+  
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.navlist {
+  display: flex;
+  list-style: none; /* Remove the default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navlist li {
+  margin-right: 537px; /* Adjust the spacing between list items */
+}
+
+.navlist a {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Set a transparent border by default */
+  transition: all 0.55s ease;
+  background-color: rgba(190, 190, 190, 0.537);
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255); /* Change text color on hover for better UX */
+}
+
+/* Menu Icon Styles */
+#menu-icon {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+
+
+@keyframes sliderShape {
+  0%, 100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+
+.header-container {
+  text-align: center;
+  padding: 60px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #000000;
+}
+
+header p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000000;
+}
+.container {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.search-container button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+
+
+#searchData {
+  padding: 10px;
+  font-size: 18px;
+}
+
+button {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0) 148, 62;
+}
+
+.section {
+  background-color: #edebeb;
+  padding: 50px;
+  margin: 50px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.675);
+}
+
+.meaning-container {
+  margin-top: 50px;
+  padding: 0px;
+}
+
+.meaning {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff8f8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 25px;
+  margin: 5px 0;
+  background-color: rgba(190, 190, 190, 0.537);
+}
+
+.synonyms-container {
+  margin-top: 20px;
+}
+
+.synonyms {
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff8f8;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #d1d1d1;
+  position: relative;
+  width: 100%;
+  min-height: 120px;
+  max-height: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; /* Set the text color to make it visible on the background */
+}
+
+
+/* Social Icon Styles */
+footer .social_icon,
+footer .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Center the individual social icons */
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+  margin: 0 20px; 
+}
+
+footer .social_icon li a,
+footer .menu li a {
+  font-size: 1.2em; 
+  color: #000000;
+  margin: 0 px; 
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a {
+  transform: translateX(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em; 
+  color:#000000;
+  margin: 0 px; 
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+
+}
+
+footer p{
+  color: #000000;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}

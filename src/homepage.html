@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary & Thesaurus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="fetchapi1.js"></script>
+
+</head>
+<body>
+    <header class="custom-header">
+        <a href="index.html" class="logo">DICTIONARY APP & THESAURUS</a>
+        <ul class="navlist">
+            <li><a href="index.html">Dictionary</a></li>
+            <li><a href="homepage.html">Thesaurus</a></li>
+            <li><a href="crud.html">Feedback</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <div class="slider-thumb"></div>
+    <div class="header-container">
+        <div class="container">
+            <h1> Thesaurus</h1>
+            <p>Find definitions, synonyms, and additional information for the terms you love.</p>
+            <div class="search-container">
+                <input type="text" id="searchData" placeholder="Words of the Day">
+                <button onclick="buttonClicked()">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DICTIONARY -->
+  
+
+    <div id="thesaurusSection" class="section">
+      <h3>Thesaurus Synonyms:</h3>
+      <div id="thesaurusSynonyms" class="synonyms-container"></div>
+      <div id="thesaurusSource" class="source"></div>
+  </div>
+
+  <!-- Display source links -->
+  <div class="section">
+      <h3>Source Links:</h3>
+      <div id="sourceLinks" class="sourcelinks-container"></div>
+      <div id="sourceLinks" class="source-container"></div>
+  </div>
+
+
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p> @2023 DICTIONARY APP | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
